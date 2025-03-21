@@ -5,7 +5,7 @@ $columns: 7;
 $calendar-padding: 10px;
 $day-total-size: $day-size + ($border-width * 2);
 /* stylelint-disable */
-$calendar-width: ($day-total-size * $columns) + ($gap * ($columns - 1)) +
+$calendar-width: ($day-size * $columns) + ($gap * ($columns - 1)) +
   (2 * $border-width * $columns);
 /* sytlelint-enable */
 $day-bg: #eee;
@@ -32,6 +32,7 @@ body {
 .calendar {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 1;
   gap: $gap;
   width: $calendar-width;
   box-sizing: border-box;
