@@ -1,5 +1,5 @@
 $border-width: 1px;
-$day-size: 99px;
+$day-size: 100px;
 $gap: 1px;
 $columns: 7;
 $calendar-padding: 10px;
@@ -34,7 +34,6 @@ body {
   flex-wrap: wrap;
   gap: $gap;
   width: $calendar-width;
-  box-sizing: border-box;
 
   &__day {
     width: $day-size;
